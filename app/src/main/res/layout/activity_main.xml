@@ -35,13 +35,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:id="@+id/textInputLayout">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Status"
-            android:inputType="text"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:inputType="textMultiLine"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
     </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:text="Save"

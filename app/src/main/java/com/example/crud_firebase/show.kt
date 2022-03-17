@@ -1,9 +1,12 @@
 package com.example.crud_firebase
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_show.*
 
 class show : AppCompatActivity() {
 
@@ -18,6 +21,11 @@ class show : AppCompatActivity() {
         ref = FirebaseDatabase.getInstance().getReference("USERS")
         list = mutableListOf()
         listView = findViewById(R.id.listView)
+
+        addNote.setOnClickListener {
+            val intent = Intent (this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         ref.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {

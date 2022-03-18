@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CRUD_Firebase">
         <activity
-            android:name=".NextActivity"
+            android:name=".show"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -19,8 +19,9 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".show"
-            android:exported="true">
+            android:name=".NextActivity"
+            android:exported="true"
+            android:theme="@style/SplashTestStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

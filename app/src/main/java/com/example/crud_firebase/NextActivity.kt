@@ -14,7 +14,7 @@ class NextActivity : AppCompatActivity() {
 
         Handler().postDelayed({
 
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, show::class.java))
             finish()
 
         }, splashScreentimeout)
